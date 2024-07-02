@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+string check(int n){
+    switch (n) {
+        case 1: return "one";
+        case 2: return "two";
+        case 3: return "three";
+        case 4: return "four";
+        case 5: return "five";
+        case 6: return "six";
+        case 7: return "seven";
+        case 8: return "eight";
+    }
+    return "nine";
+}
+
+string checkk(int n){
+    if(n%2==0)
+        return "even";
+    else
+        return "odd";
+}
+
+int main() {
+    int a,b;
+    cin>>a>>b;
+    cout<<check(a)<<endl<<check(b)<<endl;
+    cout<<checkk(a)<<endl<<checkk(b);
+    return 0;
+}
